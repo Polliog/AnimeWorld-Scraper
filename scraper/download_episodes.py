@@ -98,7 +98,9 @@ if __name__ == '__main__':
 
             download_episodes(episodes)
 
-            if args.c:
-                print('Waiting for new series')
-                time.sleep(300)
-                all_episodes()
+        all_episodes()
+
+        if args.c:
+            print('Waiting for new series')
+            time.sleep(300)
+            all_episodes()
